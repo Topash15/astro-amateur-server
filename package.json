@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ng serve",
-    "dev": "nodemon --exec npx ts-node -T ./server.ts"
+    "start": "npx ts-node -T ./server.ts",
+    "dev": "nodemon --exec npx ts-node -T ./server.ts",
+    "build": "npx ts-node -T ./server.ts"
   },
   "keywords": [],
   "author": "",
