@@ -22,6 +22,7 @@ if (process.env.ENV === "prod") {
   MYSQL_USER = "root";
   MYSQL_PASSWORD = "Cardinals035004!";
 }
+console.log(process.env.ENV);
 
 const MYSQL = {
   host: MYSQL_HOST,
