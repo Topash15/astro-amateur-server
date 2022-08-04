@@ -28,7 +28,6 @@ if (process.env.ENV === "prod") {
   SERVER_HOSTNAME = "localhost";
   SERVER_PORT = 8001;
 }
-console.log(process.env.ENV);
 
 const MYSQL = {
   host: MYSQL_HOST,

@@ -3,14 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines":{
+  "engines": {
     "node": "16.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx ts-node -T ./server.ts",
-    "dev": "nodemon --exec npx ts-node -T ./server.ts",
-    "build": "npx ts-node -T ./server.ts"
+    "start": "ts-node -T ./server.ts",
+    "dev": "nodemon --exec npx ts-node -T ./server.ts"
   },
   "keywords": [],
   "author": "",
