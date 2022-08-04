@@ -17,7 +17,7 @@ if (process.env.ENV === "prod") {
   MYSQL_DATABASE = process.env.MYSQL_DATABASE;
   MYSQL_USER = process.env.MYSQL_USER;
   MYSQL_PASSWORD = process.env.MYSQL_PASSWORD;
-  SERVER_PORT = process.env.SERVER_HOSTNAME
+  SERVER_PORT = process.env.PORT
 } else {
   console.log("running local database");
   MYSQL_HOST = "localhost";
