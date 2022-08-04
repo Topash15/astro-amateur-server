@@ -8,8 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node -T ./server.ts",
-    "dev": "nodemon --exec npx ts-node -T ./server.ts"
+    "start": "node dist/server.js",
+    "dev": "nodemon --exec ts-node -T ./server.ts",
+    "postinstall": "tsc",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku main"
   },
   "keywords": [],
   "author": "",
