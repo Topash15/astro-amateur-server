@@ -1,4 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/883baa49-6561-440c-936d-060a0a35323d/resourceGroups/astro-amateur-server-rg/providers/Microsoft.Web/sites/astro-amateur-server",
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/883baa49-6561-440c-936d-060a0a35323d/resourceGroups/astro-amateur-server-RG/providers/Microsoft.Web/sites/astro-amateur-server",
     "appService.deploySubpath": "."
 }

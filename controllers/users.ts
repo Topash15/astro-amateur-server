@@ -120,10 +120,10 @@ const getUserByEmail = (req: Request, res: Response, next: NextFunction) => {
 
 // logs user in
 const login = (req: Request, res: Response, next: NextFunction) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
   let query = `SELECT * FROM users 
-  WHERE email = '${email}'`;
+  WHERE username = '${username}'`;
 
   Connect()
     .then((connection) => {
