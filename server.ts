@@ -64,7 +64,7 @@ router.use((req, res, next) => {
   return next();
 });
 
-/** Routes go here */
+/** Routes */
 router.use("/api/portfolio", photoRoutes);
 router.use("/api/learning", articleRoutes);
 router.use("/api/taglist", taglistRoutes);
