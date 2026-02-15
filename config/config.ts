@@ -7,6 +7,7 @@ let MYSQL_HOST;
 let MYSQL_DATABASE;
 let MYSQL_USER;
 let MYSQL_PASSWORD;
+let MYSQL_PORT: number | undefined;
 let SERVER_HOSTNAME;
 let SERVER_PORT = undefined;
 
@@ -17,6 +18,7 @@ if (process.env.ENV === "prod") {
   MYSQL_DATABASE = process.env.MYSQL_DATABASE;
   MYSQL_USER = process.env.MYSQL_USER;
   MYSQL_PASSWORD = process.env.MYSQL_PASSWORD;
+  MYSQL_PORT = process.env.MYSQL_PORT ? parseInt(process.env.MYSQL_PORT) : 3306;
   SERVER_HOSTNAME = process.env.SERVER_HOSTNAME;
   SERVER_PORT = process.env.PORT;
 } else {
@@ -34,6 +36,7 @@ const MYSQL = {
   database: MYSQL_DATABASE,
   user: MYSQL_USER,
   password: MYSQL_PASSWORD,
+  port: MYSQL_PORT,
 };
 
 const SERVER = {
